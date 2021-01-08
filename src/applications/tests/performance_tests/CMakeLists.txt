@@ -14,7 +14,7 @@ add_executable(latency_test latency_test.cpp aggregate_latency.cpp)
 target_link_libraries(latency_test derecho)
 
 # cooked send bandwidth test
-add_executable(typed_subgroup_bw_test typed_subgroup_bw_test.cpp bytes_object.cpp)
+add_executable(typed_subgroup_bw_test typed_subgroup_bw_test.cpp bytes_object.cpp partial_senders_allocator.cpp)
 target_link_libraries(typed_subgroup_bw_test derecho)
 
 # persistent bandwidth
